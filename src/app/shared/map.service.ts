@@ -10,7 +10,7 @@ export class MapService {
   constructor(private http: Http, @Inject(ConfigToken) private config: Config) { }
 
   getStreets(): Observable<Response> {
-    return  this.http.get('./../assets/streets.json')
+    return  this.http.get('assets/streets.json')
       .map((res: Response) => res);
   }
 
