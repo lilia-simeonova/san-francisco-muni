@@ -1,0 +1,48 @@
+<h1>
+  San Francisco Muni Transportation
+</h1>
+
+<div *ngIf="!buses" class="buses">
+  
+  The buses will appear in a second...
+  <img src="./../assets/gears.gif"/>
+  </div>
+
+<div class="container">
+  <h2>Menu</h2>
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Reset</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+
+        <div class="btn-custom" (click)="reset()"> See All Buses</div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">See the routes</a>
+          </h4>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse">
+          <ul>
+
+            <li *ngFor="let tag of tags; let i = index" class="routes" [class.active]='this.activeRoutes.get(tag)' (click)="changeView(tag)">{{ tag }}</li>
+          </ul>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">About Lilia</a>
+            </h4>
+          </div>
+          <div id="collapse3" class="panel-collapse collapse">
+            <a href="https://github.com/lilia-simeonova">GitHub</a>
+            <a href="http://thelillysblog.com">Blog</a>
+          </div>
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,96 @@
+app-buses {
+    width:900px;
+}
+
+ul {
+    margin: 0 auto;
+    padding-left: 0px;
+}
+li {
+    display: inline-block;
+    margin-right:15px;
+    cursor: pointer;
+}
+
+.routes {
+  width: 60px;
+  text-align: center;
+  height: 20px;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  background: lightgray;
+}
+
+.blue {
+  background: #13b4ff;
+}
+
+.purple {
+  background: #ab3fdd;
+}
+
+.wine {
+  background: #ae163e;
+}
+.btn-custom {
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+    margin: 5px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    background: lightgray;
+    color: black;
+}
+.wrapper2 {
+    
+
+}
+.header {
+    margin: 0 auto;
+}
+
+svg title {display: none;}
+svg g:hover title {display: block;}
+
+.container {
+    width: 250px;
+    float: left;
+    margin-right: 50px;
+}
+.panel-heading {
+    background: darkslategray;
+    color:white;
+}
+#collapse3 .panel-body {
+    padding:0;
+}
+#collapse3 a {
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    width: 100%;
+    line-height: 30px;
+    margin: 3px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    background: lightgray;
+    color: black;
+}
+.active {
+    background: darkslategray;
+    color:white;
+}
+h1 {
+    background: darkslategray;
+    color:white;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.buses {
+        text-align: center;
+    color: indianred;
+    font-size: 30px;
+
+}

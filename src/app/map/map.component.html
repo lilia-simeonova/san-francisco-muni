@@ -1,0 +1,22 @@
+<div class="wrapper">
+
+  
+
+  <span #map class="sf-map">
+
+    <img *ngIf="!scale" src="./../assets/default.gif" width="300" height="300"/>
+
+    <app-buses *ngIf="scale" [scale]="scale">
+
+
+    </app-buses>
+
+  </span>
+
+
+
+  <div>
+   
+  </div>
+</div>
+
